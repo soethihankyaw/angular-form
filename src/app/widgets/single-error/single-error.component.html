@@ -1,0 +1,4 @@
+<div [style.color]="textcolor || 'red'"
+  *ngIf="(control?.dirty || control?.touched) && control?.invalid" >
+  {{message || 'Validation Error'}}
+</div>
